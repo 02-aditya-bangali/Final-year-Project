@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='../static/style.css') }}"> -->
+
+
+    <title>Welcome</title>
+    <style>
+        .custom-opacity {
+            background-color: rgba(255, 255, 255, 0.5);
+        };     
+    </style>
+    <style>
+        .bg-custom-image {
+            background-image: url('../static/indexGirl.jpg');
+        };
+    </style>
+</head>
+
+
+<body class="bg-custom-image w-full bg-cover bg-no-repeat " >
+    <div class="m-0 p-0">
+        <div class="w-full antialiased bg-blueGray-200 dark-mode:bg-gray-900 shadow-2xl">
+            <div class="w-full text-gray-700 bg-blueGray-200 shadow-2xl dark-mode:text-gray-200 dark-mode:bg-gray-800">
+                <div x-data="{ open: true }"
+                    class="w-full flex flex-col max-w-screen-xl bg-blueGray-500 px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+                    <div class="w-full flex flex-row items-center justify-between p-4">
+                        <a href="#"
+                            class="text-lg font-semibold tracking-widest text-blue-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Movie
+                            Prediction Dashboard
+                        </a>
+                        <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+                            @click="open = !open">
+                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                                <path x-show="!open" fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                                <path x-show="open" fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav :class="{'flex': open, 'hidden': !open}"
+                        class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="#">Blog</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="#">Portfolio</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="#">About</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="#">Contact</a>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <div class="relative">
+            <div class="col justify-content-center mt-40">
+                <div
+                    class="relative shadow-2xl bg-opacity-70 max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-gray-200 w-full mb-6 shadow-lg rounded-xl mt-16 pt-5">
+                    <div class="px-6">
+
+                        <div class="text-center mt-2">
+                            <h3 class="text-2xl text-gray-800 font-bold leading-normal mb-1">Lets See The Predictions
+                            </h3>
+                            <div class="text-xs mt-0 mb-2 text-blue-900 font-bold uppercase">
+                                <i class="mr-2 text-slate-400 opacity-75"></i>Get The Success Prediction And The Target
+                                Age Group!
+                            </div>
+                        </div>
+                        <div class="mt-6 py-6 border-t border-slate-200 text-center">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full px-4">
+                                    <p class=" leading-relaxed text-black-900 mb-4">ENTER IN FOLLOWING FORMAT:</p>
+                                    <a href="javascript:;"
+                                        class="font-normal text-black-900 hover:text-red-900">Genre,Actor1,Actor2,Director,Language</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="align-items-center justify-content-center bg-gradient-light p-5 ">
+                        <form method="POST" action='/prediction'>
+                            <input class="rounded" type="text" name='inp' placeholder="Enter sentence" , size="50" />
+                            <!-- <button class="rounded-none" >Predict</button> -->
+                            <button type="submit" value="Predict"
+                                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                Predict
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

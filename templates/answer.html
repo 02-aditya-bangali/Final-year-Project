@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+  <link rel="stylesheet"
+    href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <style>
+    .bg-custom-image {
+        background-image: url('../static/ansGirl.jpg');
+    };
+</style>
+
+
+</head>
+
+<body class="bg-custom-image bg-cover bg-no-repeat">
+  <div class="mt-40">
+    <div  
+      class="relative bg-opacity-70 max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-gray-200 w-full mb-6 shadow-lg rounded-xl mt-24 pt-6">
+      <div class="px-6">
+
+        <div class="text-center mt-2">
+          <h3 class="text-2xl text-gray-800 font-bold leading-normal mb-1">Movie Success And Target Audience Prediction
+          </h3>
+          <div class="text-xs mt-0 mb-2 text-blue-900 font-bold uppercase">
+            <i class="mr-2 text-slate-400 opacity-75"></i>Here Are Your Results!!!
+          </div>
+        </div>
+        <div class="mt-6 py-6 border-t border-slate-200 text-center">
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full px-4">
+              <p class=" leading-relaxed text-black-900 mb-4">
+                According to the inputs, the movie would be a : <span class="text-blue-900 font-bold"> {{ans}} </span><br> <br>
+                Popularity of genre <span class="text-blue-900 font-bold">'{{b}}' </span> according to age groups out of 10:<br>
+                Under 18 : <span class="text-blue-900 font-bold">{{l[0]}} </span><br>
+                18 to 29 : <span class="text-blue-900 font-bold">{{l[1]}}</span><br>
+                30 to 44 : <span class="text-blue-900 font-bold">{{l[2]}}</span><br>
+                Above 45 : <span class="text-blue-900 font-bold">{{l[3]}}</span><br>
+              </p>
+
+              <!-- <a href="javascript:;"
+                    class="font-normal text-black-900 hover:text-red-900">Genre,Actor1,Actor2,Director,Language</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <!-- <h1>Movie Success And Target Audience Prediction</h1><br>
+    <h3>Here Are Your Results!!!</h3><br> -->
+
+
+</body>
+
+
+
+</div>
+
+</html>
